@@ -1,0 +1,10 @@
+# Extract tgz file
+$ tar -xvzf /path/to/filename
+where 
+		x: for extract
+		v: for verbose
+		g: for gnuzip
+		f: for file, should come at last just before the file name
+
+# Extract zip file
+$ unzip /path/to/filename -d /path/to/destination

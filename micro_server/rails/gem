@@ -1,0 +1,7 @@
+# Upgrade rubygems
+	gem install rubygems-update
+	update_rubygems
+	gem update --system
+
+	# Install gem 2.3.0
+	gem update --system 2.3.0

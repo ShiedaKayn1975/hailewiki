@@ -1,0 +1,19 @@
+# Using mongid for a rails project
+
+1. Create defaulut rails project
+
+2. Put following line to Gemfile
+	gem 'mongoid', '4.0.2'
+
+3. Install mongoid by run
+		bundle install  # Install all missing dependencies
+	or
+		gem install mongid # Install only mongoid
+
+4. Generate mongoid.yml
+	gem g mongoid:config
+
+5. Edit mongoid.yml
+
+6. Change configuration follow mongoid installation document
+	http://mongoid.org/en/mongoid/docs/installation.html

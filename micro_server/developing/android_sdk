@@ -1,0 +1,17 @@
+# How to install android sdk on ubuntu
+
+1. Go to developer.android.com to find how to download android-sdk-linux.tgz
+2. Extract the archive
+3. Move it to /opt/
+4. Read the SDK Readme.txt
+5. Update sdk in command line, can find the command line in the SDK Readme.txt
+	tools/android update sdk --no-ui
+	It takes time to finish all of the updates
+
+	If you don't want to let it updates too many things, you can run sdk manager and 
+	install what you want, just run
+		tools/android
+
+	To run avd manager
+		tools/android avd
+

@@ -1,0 +1,9 @@
+When I use ConEmu I got some problems
+
+1. Some command line application such as irb, rails... has problem
+Solve this problem by doing this:
+	set HOME=
+
+2. When I run vim, it said that  "terminal capability "cm" required"
+Solve this problem by doing:
+	set TERM=xterm
