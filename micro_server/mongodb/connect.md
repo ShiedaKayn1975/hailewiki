@@ -1,26 +1,26 @@
 # Connect with authentication
-mongo 128.199.112.254:27017/spymaster --username spymaster --password spymaster@pedia.topica ^
---authenticationDatabase spymaster ^
+mongo <host>/<dbname> --username <username> --password <password> ^
+--authenticationDatabase <dbname> ^
 --authenticationMechanism SCRAM-SHA-1
 
-mongo --host rs0/128.199.112.254:27017 spymaster --username spymaster --password spymaster@pedia.topica ^
---authenticationDatabase spymaster ^
+mongo --host <replicaname>/<host> <dbname> --username <username> --password <password> ^
+--authenticationDatabase <dbname> ^
 --authenticationMechanism SCRAM-SHA-1
 
 # Connect to a replica set
 mongo ^
-rs0/128.199.112.254:27017/spymaster ^
---username spymaster ^
---password spymaster@pedia.topica ^
---authenticationDatabase spymaster ^
+<replicaname>/<host>/<dbname> ^
+--username <username> ^
+--password <password> ^
+--authenticationDatabase <dbname> ^
 --authenticationMechanism SCRAM-SHA-1
 
 # Find the master address
 mongo ^
-128.199.112.254:27017/spymaster ^
---username spymaster ^
---password spymaster@pedia.topica ^
---authenticationDatabase spymaster ^
+<host>/<dbname> ^
+--username <username> ^
+--password <password> ^
+--authenticationDatabase <dbname> ^
 --authenticationMechanism SCRAM-SHA-1 ^
 --eval "db.isMaster()['primary']"
 

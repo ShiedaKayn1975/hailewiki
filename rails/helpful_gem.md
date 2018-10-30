@@ -1,0 +1,7 @@
+Active Admin - for content management / administration (GEM)
+acts-as-taggable-on - for tagging your posts (GEM)
+disqus - for comments (SERVICE)
+addthis - for sharing (SERVICE)
+will_paginate - for paging your resource (/posts/) (GEM)
+friendly_id - slugging your urls (pretty urls) (GEM)
+redcarpet - parsing markdown (GEM)
